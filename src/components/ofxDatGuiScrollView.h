@@ -182,6 +182,11 @@ class ofxDatGuiScrollView : public ofxDatGuiComponent {
             return mItems.size();
         }
     
+        bool getIsInside(float x, float y)
+        {
+            return mRect.inside(x, y);
+        }
+    
     /*
         list presentation
     */
